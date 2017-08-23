@@ -75,7 +75,7 @@ public class CountLineMojo extends AbstractMojo {
      */
     private void showResult(List<SingleFileCount> singleFileCountList, TotalCount totalCount) {
 
-        log.info("/n"+totalCount.toString());
+        log.info("\n"+totalCount.toString());
         if (detail) {
             log.info("=====详细数据=====");
             singleFileCountList.forEach(singleFileCount -> log.info(singleFileCount.toString()));
