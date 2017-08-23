@@ -13,24 +13,25 @@ this goal.
 _step1:_   Clone this project and install to your maven repository(mvn clean install)
 
 _step2:_   Now you can use this plugin easily.You should add this plugin in your pom.xml
-like this 
+```
 <plugin>
-<groupId>com.servyou.zs</groupId>
-<artifactId>zebra</artifactId>
-<version>1.0-SNAPSHOT</version>
-<executions>
-<execution>
-<phase>compile</phase>
-<goals>
-<goal>count</goal>
-</goals>
-</execution>
-</executions>
-<configuration>
-<detail>true</detail>
-<source>${basedir}</source>
-</configuration>
+    <groupId>com.servyou.zs</groupId>
+    <artifactId>zebra</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <executions>
+        <execution>
+            <phase>compile</phase>
+            <goals>
+                <goal>count</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <detail>true</detail>
+        <source>${basedir}</source>
+    </configuration>
 </plugin>
+```
 
 _step3:_   run maven command(like mvn compile),you will get the information
 
